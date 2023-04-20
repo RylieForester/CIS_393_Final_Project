@@ -1,0 +1,113 @@
+/*Background image design*/
+body{
+   /*The image used for the background was saved from the website 
+      https://galeriemagazine.com/worlds-most-beautiful-libraries/. */
+   background-image: url(Library_Background.jpg);
+   background-size: auto;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/*--------------------------------------------*/
+/*The below code for designing the radio 
+   buttons was created using the material in Chapter 5.6 Styling Forms of the course zyBook.*/
+/*Radio button design*/
+/*Option Design*/
+input[type=radio] + label {
+   cursor: pointer;
+   font-size: 25px;
+   font-family: cursive;
+   color: rgb(124, 85, 61);
+}
+/*Hides the original radio buttons*/
+input[type=radio] {
+   appearance: none;
+}
+/*Creates a circle next to the options*/
+input[type=radio] + label::before {
+   display: inline-block; 
+   content: "\00a0";
+   border-radius: 20px; 
+   width: 20px;
+   height: 20px; 
+   text-align: center;
+   line-height: 1em;
+   font-size: 0.8em; 
+   margin-right: 5px;
+   background-color:rgb(229, 229, 229);
+}
+/*Creates a dot inside the radio buttons*/
+input[type=radio]:checked + label::before {
+   content: "\2027";
+   color: white;
+   background: rgb(124, 85, 61);
+}
+
+/*--------------------------------------------*/
+/*The below code for designing the different 
+   buttons was created using the material in Chapter 5.6 Styling Forms of the course zyBook.*/
+/*Buttons Design*/
+input[type=button] {
+   display: inline-block;
+   background-color: rgb(124, 85, 61);
+   border: solid 3px rgb(85, 58, 42);
+   width: 150px;
+   font-size: 15px;
+   text-align: center;
+   color: white;
+}
+input[type=button]:hover{
+   cursor: pointer;
+   background-color: rgb(85, 58, 42); 
+   border: solid 3px rgb(56, 38, 28); 
+}
+
+button{
+   display: inline-block;
+   background-color: rgb(124, 85, 61);
+   border: solid 3px rgb(85, 58, 42);
+   font-size: 15px;
+   text-align: center;
+   color: white;
+}
+button:hover{
+   cursor: pointer;
+   background-color: rgb(85, 58, 42); 
+   border: solid 3px rgb(56, 38, 28); 
+}
+
+/*-------------------------------------------*/
+ /*Widget grouping design*/
+fieldset{
+    border: solid 5px rgb(85, 58, 42);
+    border-radius: 20px;
+    background-color: rgba(181, 153, 138, 0.85);
+    width: 425px;
+    margin: auto;
+}
+legend{
+    font-size: 28px;
+    font-family: Georgia;
+    color: rgb(124, 85, 61);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    background-color: rgba(181, 153, 138, 0.85);
+    border-radius: 15px;
+    border: solid 5px rgb(85, 58, 42);
+    padding: 20px;
+}
+fieldset > p{
+   font-size: 25px;
+   font-family: Arial;
+   color: rgb(124, 85, 61);
+   text-align: justify;
+}
+
+table, th, tr, td{
+   border: solid 5px rgb(85, 58, 42);
+   background-color: rgb(154, 122, 103);
+   text-align: center;
+   border-collapse: collapse;
+   padding: 10px;
+}
