@@ -1,0 +1,72 @@
+<head>
+    <link rel="stylesheet" href="CSS_Design.css">
+</head>
+
+<body style="padding-top: 20px;">
+    <div style="text-align: center;">
+        <form method="GET" action="/" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">MAIN MENU</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">WISHLIST</button>
+        </form>
+    </div>
+    <br>
+    
+    <fieldset>
+        <legend>BOOK&nbsp;RECOMMENDATIONS:<br>Fiction&nbsp;Genres</legend>
+        <p>Select any of the below fiction genres.</p>
+        <p>(NOTE: You may select one of the options below. Selecting only the 'Fiction' option will generate fiction recommendations
+             that could include any of the given genres below.)</p>
+
+        <form method="POST" action="/recommendations_fiction">
+            <div style="text-align: justify;">
+                <input type="radio" name="fiction_genre" id="adventure" value="Adventure">
+                <label for="adventure">Adventure</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="fantasy" value="Fantasy">
+                <label for="fantasy">Fantasy</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="fiction" value="Fiction">
+                <label for="fiction">Fiction</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="historical" value="Historical">
+                <label for="historical">Historical</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="horror" value="Horror">
+                <label for="horror">Horror</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="mystery" value="Mystery">
+                <label for="mystery">Mystery</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="mythology" value="Mythology">
+                <label for="mythology">Mythology</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="romance" value="Romance">
+                <label for="romance">Romance</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="scifi" value="Sci-Fi">
+                <label for="scifi">Sci-Fi</label>
+                <br>
+                <input type="radio" name="fiction_genre" id="western" value="Western">
+                <label for="western">Western</label>
+                <br><br><br>
+                <div style="text-align: center;">
+                    <button style="height: 50px; width: 175px;">OK</button>
+                </div>
+            </div>
+        </form>
+        <div style="text-align: center;">
+            <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">BACK</button>
+            </form>
+        </div>
+        <br>
+    </fieldset>
+    
+</body>

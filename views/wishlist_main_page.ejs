@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="CSS_Design.css">
+</head>
+
+<body style="padding-top: 40px;">
+    <div style="text-align: center;">
+        <form method="GET" action="/" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">MAIN MENU</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">WISHLIST</button>
+        </form>
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>&nbsp;WISHLIST&nbsp;</legend>
+        <p>Below are the available options for how you can view or modify your wishlist.</p>
+        <p>Please select one of the buttons.</p>
+        <br>
+
+        <div style="text-align: center;">
+            <form method="GET" action="/wishlist_create" style="display: inline-block;">
+                <button style="height: 75px; width: 200px;">CREATE A WISHLIST</button>
+            </form>
+            <br>
+            <form method="GET" action="/wishlist_insert" style="display: inline-block;">
+                <button style="height: 75px; width: 200px;">ADD A BOOK TO YOUR WISHLIST</button>
+            </form>
+            &nbsp;&nbsp;
+            <form method="GET" action="/wishlist_delete" style="display: inline-block;">
+                <button style="height: 75px; width: 200px;">DELETE A BOOK FROM YOUR WISHLIST</button>
+            </form>
+            <form method="GET" action="/wishlist_search" style="display: inline-block;">
+                <button style="height: 75px; width: 200px;">SEARCH FOR A WISHLIST</button>
+            </form>
+            &nbsp;&nbsp;
+            <form method="GET" action="/wishlist_display_all" style="display: inline-block;">
+                <button style="height: 75px; width: 200px;">DISPLAY WISHLIST DATABASE</button>
+            </form>
+            <br><br><br>
+            <form method="GET" action="/">
+                <button style="height: 50px; width: 175px;">MAIN MENU</button>
+            </form>
+        </div>
+    </fieldset>
+</body>

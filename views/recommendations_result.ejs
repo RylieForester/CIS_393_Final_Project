@@ -1,0 +1,65 @@
+<head>
+    <link rel="stylesheet" href="CSS_Design.css">
+</head>
+
+<body style="padding-top: 40px;">
+    <div style="text-align: center;">
+        <form method="GET" action="/" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">MAIN MENU</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">WISHLIST</button>
+        </form>
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>RECOMMENDATION RESULTS</legend>
+        <p style="text-align: justify;">
+            Below is a table of recommended book titles with a genre of <%= data[0].Genre%>. 
+        </p> 
+        <br>
+
+        <table style="margin-left: auto; margin-right: auto; width: 700px;">
+            <tr>
+                <th>ISBN</th>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+            </tr>
+            <% data.forEach(function(book){ %>
+                <tr>
+                    <td>
+                        <%=book.ISBN%>
+                    </td>
+                    <td>
+                        <%=book.Title%>
+                    </td>
+                    <td>
+                        <%=book.Author%>
+                    </td>
+                    <td>
+                        <%=book.Genre%>
+                    </td>
+                </tr>
+            <% }) %>
+        </table>
+        <br><br>
+
+        <div style="text-align: center;">
+            <form method="GET" action="/" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">MAIN MENU</button>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+            </form>
+        </div>
+        <br>
+    </fieldset>
+</body>

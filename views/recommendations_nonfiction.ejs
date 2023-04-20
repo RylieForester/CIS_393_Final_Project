@@ -1,0 +1,63 @@
+<head>
+    <link rel="stylesheet" href="CSS_Design.css">
+</head>
+
+<body>
+    <body style="padding-top: 40px;">
+        <div style="text-align: center;">
+            <form method="GET" action="/" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">MAIN MENU</button>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">WISHLIST</button>
+            </form>
+        </div>
+        <br>
+        <fieldset>
+            <legend>BOOK&nbsp;RECOMMENDATIONS:<br>Nonfiction&nbsp;Genres</legend>
+            <p>Select any of the below nonfiction genres.</p>
+            <p>(NOTE: You may select one or multiple options. Selecting only the 'Nonfiction' option will generate nonfiction recommendations
+                that could include any of the given genres below.  </p>
+            <form method="POST" action="/recommendations_nonfiction">
+                <div style="text-align: justify;">
+                    <input type="radio" name="nonfiction_genre" id="autobiography" value="Autobiography">
+                    <label for="autobiography">Autobiography</label>
+                    <br>
+                    <input type="radio" name="nonfiction_genre" id="biography" value="Biography">
+                    <label for="biography">Biography</label>
+                    <br>
+                    <input type="radio" name="nonfiction_genre" id="history" value="History">
+                    <label for="history">History</label>
+                    <br>
+                    <input type="radio" name="nonfiction_genre" id="memoir" value="Memoir">
+                    <label for="memoir">Memoir</label>
+                    <br>
+                    <input type="radio" name="nonfiction_genre" id="nonfiction" value="Nonfiction">
+                    <label for="nonfiction">Nonfiction</label>
+                    <br>
+                    <input type="radio" name="nonfiction_genre" id="periodical" value="Periodical">
+                    <label for="periodical">Periodical</label>
+                    <br>
+                    <input type="radio" name="nonfiction_genre" id="travel" value="Travel">
+                    <label for="travel">Travel</label>
+                    <br><br><br>
+                    <div style="text-align: center;">
+                        <button style="height: 50px; width: 175px;">OK</button>
+                    </div>
+                </div>
+            </form>
+            <div style="text-align: center;">
+                <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+                    <button style="height: 50px; width: 175px;">BACK</button>
+                </form>
+            </div>
+            <br>
+        </fieldset>
+        
+    </body>
+</body>
