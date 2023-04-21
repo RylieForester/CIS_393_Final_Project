@@ -6,7 +6,7 @@ var mysql = require('mysql')
 var con = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    database : 'University2'
+    database : 'CIS_393_Project'
 });
 
 //Checks the SQL connection.
@@ -40,7 +40,7 @@ app.get("/recommendations_main_page", function(req, res){
 //Route for Fiction Page of Recommendations.
 app.post("/recommendations_fiction", function(req, res){
     var fiction_genre = req.body.fiction_genre;
-    var q = "select * from Book_List where Genre = ?";
+    var q = "select * from Book_Recommendation_List where Genre = ?";
 
     con.query(q, fiction_genre, function(error, results) {
         if (error) throw error;
@@ -55,7 +55,7 @@ app.get("/recommendations_fiction", function(req, res){
 //Route for Nonfiction Page of Recommendations.
 app.post("/recommendations_nonfiction", function(req, res){
     var nonfiction_genres = req.body.nonfiction_genre;
-    var q = "select * from Book_List where Genre = ?";
+    var q = "select * from Book_Recommendation_List where Genre = ?";
 
     con.query(q, nonfiction_genres, function(error, results) {
         if (error) throw error;
@@ -69,7 +69,7 @@ app.get("/recommendations_nonfiction", function(req, res){
 
 //Route for Poetry Page of Recommendations.
 app.get("/recommendations_poetry", function(req, res){
-    var q = "select * from Book_List where Genre = 'Poetry'";
+    var q = "select * from Book_Recommendation_List where Genre = 'Poetry'";
 
     con.query(q, function(error, results) {
         if (error) throw error;
