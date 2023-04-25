@@ -27,4 +27,4 @@ Changes made to this repo:
 NOTES:
 - The app.js file contains all of the routes and necessary connections for this website.
 - The main_menu.ejs file is the default and starting page for this website. 
-- The port number for the app.js file is 8080; type localhost:8080 to access the main page of the website.
+- The port number for the app.js file is 8080; type 'localhost:8080' to access the main page of the website.
