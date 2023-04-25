@@ -88,8 +88,6 @@ app.get("/wishlist_main_page", function(req, res){
 //Route for Creating a Wishlist.
 app.post("/wishlist_create", function(req, res){
     //Obtains User Input.
-    var userFirstName = {First_Name: req.body.wishlistFirstName};
-    var userLastName = {Last_Name: req.body.wishlistLastName};
     var q = "insert into User set ?";
     var userInput = {First_Name: req.body.wishlistFirstName, Last_Name: req.body.wishlistLastName};
 
@@ -101,6 +99,23 @@ app.post("/wishlist_create", function(req, res){
 
 app.get("/wishlist_create", function(req, res){
     res.render("wishlist_create");
+});
+
+//Route for Updating a Name in a Wishlist.
+app.post("/wishlist_update", function(req, res){
+    //Obtains User Inputs.
+    var userID = req.body.updatedID;
+    var q = "update User where ID = " + userID;
+    var userInput = {First_Name: req.body.updatedFirstName, Last_Name: req.body.updatedLastName};
+
+    con.query(q, userInput, function(error, results) {
+        if (error) throw error;
+        res.render("wishlist_update_result", {data:results});
+    });
+});
+
+app.get("/wishlist_update", function(req, res){
+    res.render("wishlist_update");
 });
 
 //Route for Inserting a Book into a Wishlist.
