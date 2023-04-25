@@ -1,0 +1,66 @@
+<head>
+    <link rel="stylesheet" href="CSS_Design.css">
+    <script src="Javascript_Update_Design.js"></script>
+</head>
+
+<body style="padding-top: 40px;">
+    <div style="text-align: center;">
+        <form method="GET" action="/" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">MAIN MENU</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">WISHLIST</button>
+        </form>
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>&nbsp;UPDATE YOUR WISHLIST&nbsp;</legend>
+        <p>Input your ID number, First Name, and Last Name and press the 'Validate' button to validate them.</p>
+        <p>(NOTE: The entered ID must be a whole number and the entered First and Last Names must be strings. If the entered ID, First Name, or Last Name are invalid, the textboxes will turn red; otherwise, they will turn green.)</p>
+        <p>After validating your inputs, the 'OK' button will appear; press it update the First and Last Names associated with the entered ID. Note that the First and Last Names are the only inputs that will be updated.</p>
+        <br>
+        <form method="POST" action="/wishlist_update"> 
+            <label for="updatedUserID" style="font-size: 22px; font-family: Arial; color: rgb(124, 85, 61); text-align: justify;">ENTER ID:</label>
+            <br>
+            <p style="padding-left: 20px;">
+                <input type="text" name="updatedID" id="updatedUserID" placeholder="ID" style="height: 35px; width: 380px; font-size: 20px;">
+            </p>
+            <br>
+            <label for="updatedUserFirstName" style="font-size: 22px; font-family: Arial; color: rgb(124, 85, 61); text-align: justify;">ENTER FIRST NAME:</label>
+            <br>
+            <p style="padding-left: 20px;">
+                <input type="text" name="updatedFirstName" id="updatedUserFirstName" placeholder="First Name" style="height: 35px; width: 380px; font-size: 20px;">
+            </p>
+            <br>
+            <label for="updatedUserLastName" style="font-size: 22px; font-family: Arial; color: rgb(124, 85, 61); text-align: justify;">ENTER LAST NAME:</label>
+            <br>
+            <p style="padding-left: 20px;">
+                <input type="text" name="updatedLastName" id="updatedUserLastName" placeholder="Last Name" style="height: 35px; width: 380px; font-size: 20px;">
+            </p>
+            <br>
+
+            <div style="text-align: center;">
+                <input type="button" id ="validateButton" value="VALIDATE" style="height: 50px; width: 175px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="okButton" style="height: 50px; width: 175px; opacity: 0%;">OK</button>
+            </div>
+            <br>
+        </form>
+        <div style="text-align: center;">
+            <form method="GET" action="/" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">MAIN MENU</button>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">WISHLIST</button>
+            </form>
+        </div>
+        <br>
+    </fieldset>   
+</body>
