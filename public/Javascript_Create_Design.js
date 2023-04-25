@@ -5,7 +5,7 @@ function domLoaded() {
    let button = document.getElementById("validateButton");
    button.addEventListener("click", validateUserName);
 
-   let userInputFirstName = document.getElementById("wishlistUserName");
+   let userInputFirstName = document.getElementById("wishlistUserFirstName");
    let userInputLastName = document.getElementById("wishlistUserLastName");
 }
 
