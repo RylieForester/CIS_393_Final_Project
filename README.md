@@ -3,7 +3,6 @@ Changes made to this repo:
 
 04.13.23 - 
     1. Created three databases for the project.
-    
     2. Inserted data into the necessary databases.
 
 04.19.23 - 
