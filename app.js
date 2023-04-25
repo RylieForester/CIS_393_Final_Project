@@ -87,7 +87,7 @@ app.get("/wishlist_main_page", function(req, res){
 
 //Route for Creating a Wishlist.
 app.post("/wishlist_create", function(req, res){
-    //Obtains User Input.
+    //Obtains User Inputs.
     var q = "insert into User set ?";
     var userInput = {First_Name: req.body.wishlistFirstName, Last_Name: req.body.wishlistLastName};
 
