@@ -105,8 +105,8 @@ app.get("/wishlist_create", function(req, res){
 app.post("/wishlist_update", function(req, res){
     //Obtains User Inputs.
     var userID = req.body.updatedID;
-    var q = "update User where ID = " + userID;
     var userInput = {First_Name: req.body.updatedFirstName, Last_Name: req.body.updatedLastName};
+    var q = "update User set ? where ID = " + userID;
 
     con.query(q, userInput, function(error, results) {
         if (error) throw error;
