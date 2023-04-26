@@ -25,7 +25,7 @@ Changes made to this repo:
 5. Updated app.js as needed.
 
 04.26.23
-1. Created an ejs file to delete a user's account.
+1. Created an ejs file to delete a user from the database.
 2. Created a route for deleting a user from the database. 
 3. Created a javascript file for deleting a user. 
 4. Modified other ejs files as needed. 
