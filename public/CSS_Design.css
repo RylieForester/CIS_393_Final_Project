@@ -52,7 +52,7 @@ input[type=button] {
    background-color: rgb(124, 85, 61);
    border: solid 3px rgb(85, 58, 42);
    width: 150px;
-   font-size: 15px;
+   font-size: 14px;
    text-align: center;
    color: white;
 }
@@ -66,7 +66,7 @@ button{
    display: inline-block;
    background-color: rgb(124, 85, 61);
    border: solid 3px rgb(85, 58, 42);
-   font-size: 15px;
+   font-size: 14px;
    text-align: center;
    color: white;
 }
