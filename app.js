@@ -109,7 +109,7 @@ app.post("/wishlist_delete_user", function(req, res){
 
     con.query(q, userID, function(error, results) {
         if (error) throw error;
-        res.render("wishlist_delete_result", {data:results});
+        res.render("wishlist_delete_user_result", {data:results});
     });
 });
 
