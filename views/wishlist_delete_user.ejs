@@ -1,0 +1,54 @@
+<head>
+    <link rel="stylesheet" href="CSS_Design.css">
+    <script src="Javascript_Delete_User_Design.js"></script>
+</head>
+
+<body style="padding-top: 40px;">
+    <div style="text-align: center;">
+        <form method="GET" action="/" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">MAIN MENU</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/recommendations_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">RECOMMENDATIONS</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+            <button style="height: 50px; width: 175px;">WISHLIST</button>
+        </form>
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>&nbsp;DELETE YOUR WISHLIST&nbsp;</legend>
+        <p>Input an ID number and press the 'Validate' button to validate it.</p>
+        <p>(NOTE: The entered ID must be a whole number. If the entered ID is invalid, the textbox will turn red; otherwise, it will turn green.)</p>
+        <p>After validating your inputs, the 'OK' button will appear; press it to delete your acccount and corresponding wishlist from the database.</p>
+        <br>
+        <form method="POST" action="/wishlist_delete_user"> 
+            <label for="deletedUserID" style="font-size: 22px; font-family: Arial; color: rgb(124, 85, 61); text-align: justify;">ENTER ID:</label>
+            <br>
+            <p style="padding-left: 20px;">
+                <input type="text" name="deletedID" id="deletedUserID" placeholder="ID" style="height: 35px; width: 380px; font-size: 20px;">
+            </p>
+            <br>
+
+            <div style="text-align: center;">
+                <input type="button" id ="validateButton" value="VALIDATE" style="height: 50px; width: 175px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="okButton" style="height: 50px; width: 175px; opacity: 0%;">OK</button>
+            </div>
+            <br>
+        </form>
+        <div style="text-align: center;">
+            <form method="GET" action="/" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">MAIN MENU</button>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form method="GET" action="/wishlist_main_page" style="display: inline-block;">
+                <button style="height: 50px; width: 175px;">WISHLIST</button>
+            </form>
+        </div>
+        <br>
+    </fieldset>   
+</body>
