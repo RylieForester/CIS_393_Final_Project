@@ -101,6 +101,22 @@ app.get("/wishlist_create", function(req, res){
     res.render("wishlist_create");
 });
 
+//Route for Deleting a User's Wishlist.
+app.post("/wishlist_delete_user", function(req, res){
+    //Obtains User Inputs.
+    var userID = req.body.deletedID;
+    var q = "delete User.*, User_Wishlist.* from User left outer join User_Wishlist on User.ID = User_Wishlist.ID where User.ID = " + userID;
+
+    con.query(q, userID, function(error, results) {
+        if (error) throw error;
+        res.render("wishlist_delete_result", {data:results});
+    });
+});
+
+app.get("/wishlist_delete_user", function(req, res){
+    res.render("wishlist_delete_user");
+});
+
 //Route for Updating a Name in a Wishlist.
 app.post("/wishlist_update", function(req, res){
     //Obtains User Inputs.
