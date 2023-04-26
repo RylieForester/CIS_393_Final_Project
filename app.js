@@ -101,7 +101,7 @@ app.get("/wishlist_create", function(req, res){
     res.render("wishlist_create");
 });
 
-//Route for Deleting a User's Wishlist.
+//Route for Deleting a User and their Wishlist.
 app.post("/wishlist_delete_user", function(req, res){
     //Obtains User Inputs.
     var userID = req.body.deletedID;
