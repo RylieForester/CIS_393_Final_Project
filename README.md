@@ -31,6 +31,10 @@ Changes made to this repo:
 4. Modified other ejs files as needed. 
 5. Updated app.js as needed.
 
+04.30.23
+1. Finalized all project files. 
+2. Exported database and inserted the sql file into the project folder. 
+
 NOTES:
 - The app.js file contains all of the routes and necessary connections for this website.
 - The main_menu.ejs file is the default and starting page for this website. 
