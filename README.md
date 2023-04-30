@@ -1,4 +1,4 @@
-# CS_393_Final_Project
+# CIS_393_Final_Project
 Changes made to this repo:
 
 04.13.23 - 
